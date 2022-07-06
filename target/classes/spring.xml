@@ -5,6 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean class="demo.Doctor" id="doctor"/>
+    <bean class="demo.Doctor" id="doctor">
+        <property name="qualification" value = "MBBS"/>
+    </bean>
     <bean class="demo.Nurse" id="nurse"/>
 </beans>
