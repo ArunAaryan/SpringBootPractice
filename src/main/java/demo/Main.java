@@ -11,8 +11,6 @@ public class Main {
             Doctor d = context.getBean(Doctor.class);
 
             d.assist();
-            Nurse n = (Nurse) context.getBean("nurse"); // takes the id from spring.xml
-            n.assist();
             Staff staff = context.getBean(Doctor.class);
             staff.assist();
     }
