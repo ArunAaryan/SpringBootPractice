@@ -9,9 +9,10 @@ public class Main {
 //        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         ApplicationContext context = new AnnotationConfigApplicationContext(BeanConfig.class);
             Doctor d = context.getBean(Doctor.class);
-
             d.assist();
-            Staff staff = context.getBean(Doctor.class);
-            staff.assist();
+            d.setQualification("MBBS");
+            System.out.println(d); // MBBS
+            Doctor d1 = context.getBean(Doctor.class);
+            System.out.println(d1); //MBBS again same class because it is singleton class by default
     }
 }
