@@ -12,8 +12,5 @@ public class Main {
             n.assist();
             Staff staff = context.getBean(Doctor.class);
             staff.assist();
-
-        System.out.println(d.getQualification());
-
     }
 }
